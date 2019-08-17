@@ -43,9 +43,27 @@ a {
 .u-listmenu li {
 	list-style-type: none;
 	display: inline;
-	margin:20px;
+	margin:10px;
+	padding: 0;
+	font-size: 16px;
+
 	
 
+}
+
+.menu-header {
+	background-color:#e0e2e4;
+	text-align: center;
+	margin-top:10px;
+	max-height: 30px;
+	padding:0;
+}
+
+
+.logoheader img {
+
+	margin-left:37%;
+	padding:0;
 }
 
 .subtitle {
@@ -54,9 +72,34 @@ a {
 	font-family: 'Roboto' , sans-serif;
 }
 
+.stepbox {
+	background-color: yellow;
+	text-align: center;
+}
+
 .portfolio-item img {
 	max-width: 100%;
+	min-height: 400px;
+	opacity: 0.4;
 	margin:0;
+
+}
+
+.map {
+	max-width: 100%;
+}
+
+.portfolio-item img:hover {
+	opacity: 1.0;
+}
+
+
+.info-step {
+	text-align: center;
+}
+
+.title-name {
+	margin-top:10px;
 }
 
 .img-mar img {
