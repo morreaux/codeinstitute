@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- MAKING SURE IF A LINK IS SHARED ON SOCIAL MEDIA, IT WILL LOOK GOOD (IMG + DESCRIPTION) -->
+    <meta property="og:image" content="https://i2.wp.com/s3-eu-west-1.amazonaws.com/sup46/wp-content/uploads/2019/02/01124431/code-institute-header-2-e1549023510442.png?fit=2400%2C1200"/>
+    <meta property="og:description" content="Website for my Milestone Project at the Code Institute. Feel free to have a look and let me know what you think!"/>
+
     <!-- CALLING STYLESHEET -->
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
   	<script src="https://kit.fontawesome.com/987f900493.js"></script>
   	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
+
   	<!-- TITLE OF WEBPAGE -->
 	<title>N E A U B A E | M. Urriagli  | Code Institute Project </title>
 
-
 </head>
+ 	<!-- BODY START -->
 <body>
-			<nav class="navbar sticky-top bg-light">
-				<div class="row rowmenu">
-					<div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 logoheader">
-						<a href="#home"><img src="assets/img/logo.png" /> </a>
-					</div>
-					
-				
-				</div>
-			
-			</nav>	
+	 	<!-- NAV START -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+	      <a class="navbar-brand" href="#home"><img src="assets/img/logo.png"/></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navmenu">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+	          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+	          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+	          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+	          <li class="nav-item"><a class="nav-link" href="https://github.com/morreaux/codeinstitute">Git Repository</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+		<!-- NAV END -->
 
+		<!-- HEADER START-->
 		<header id="home"> 
 				<div class="container d-flex h-100 align-items-center">
 			      	<div class="mx-auto text-center">
@@ -36,59 +49,55 @@
 			    </div>
 
 		</header>
+		<!-- HEADER END -->
 
+		<!-- ABOUT SECTION START -->
 		<section id="about" >
-
 		<div class="container">
 			<div class="row">
-    			<div class="col-md-12 title-text">
+    			<div class="col-12 title-text">
     				<h1> A B O U T</h1>
     				<h3 class="undertitle">MORE ABOUT NEAUBAE</h3>
     			</div>
   			</div>
   			<div class="row">
     			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-
     				<div class="img-rounded img-mar">
-    					<img class="img-responsive center-block" src="assets/img/mar.png" />
+    					<img src="assets/img/mar.png" />
     				</div>
     				<h6 class="title-name"> INTRODUCTION / MAROUAN URRIAGLI</h6>
-    				
     				<p>My name is Marouan Urriagli, a 27 year old designer and developer from Amsterdam. In 2017, I completed my <i>Business IT & Management</i> studies and received my BBA. After that, I started working for <i>Boeing</i> and now I am looking for a new adventure. I'm interested in designing and developing, using tools such as <i>Sketch, Adobe Illustrator, Adobe Photoshop, </i> etc. 
     				 </p>
     				</div>
   				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
   					<h6>WHAT DO WE DO</h6>
-  					<p>THIS COULD HAVE BEEN A REAL TEXT IF THIS WAS A REAL PROJECT, BUT THIS 
+  					<p class="text-description">THIS COULD HAVE BEEN A REAL TEXT IF THIS WAS A REAL PROJECT, BUT THIS 
 						TEXT IS JUST TO DEMONSTRATE THAT I LEARNED A LOT DURING THE HTML 
 						AND CSS COURSES. THIS MEANS THAT I’M ABLE TO DEVELOP MY OWN SIMPLE
-						WEBSITE AND MAKE MY IDEAS REALITY. DURING THE HTML AND CSS COURSES. 
-						THIS COULD HAVE BEEN A REAL TEXT IF THIS WAS A REAL PROJECT, BUT THIS 
-						TEXT IS JUST TO DEMONSTRATE THAT I LEARNED A LOT DURING THE HTML 
-						AND CSS COURSES. THIS MEANS THAT I’M ABLE TO DEVELOP MY OWN SIMPLE
-						WEBSITE AND MAKE MY IDEAS REALITY. DURING THE HTML AND CSS COURSES.</p>
-
+						WEBSITE AND MAKE MY IDEAS REALITY. DURING THE HTML AND CSS COURSES WE LEARNED
+						HOW TO USES CLASSES AND ID'S TO STYLE PARTS OF A WEBSITE. THEREFORE YOU WILL SEE
+						THIS TEXT IN LOWER CASE, WHILE ACTUALLY IT WAS WRITTEN IN UPPERCASE USING CAPSLOCK. 
+						</p>
 						<h6>HOW DO WE DO IT?</h6>
   					<div class="row stepbox">
-
-  						<div class="col-12">
-  								<i class="far fa-lightbulb fa-2x"></i>
-								<p>STEP 1: IDEA</p>
-								<p> during this stage, we will work out your idea and make sure it is unique</p>
+  						<div class="col-lg-6 stepbox-item">
+  								<i class="far icon fa-lightbulb fa-2x"></i>
+								<p class="steptext">STEP 1: IDEA</p>
+								<p> during this stage, we will work out your idea and make sure it is unique.</p>
   						</div>
-  						<div class="col-12">
-  								<i class="fas fa-pencil-ruler fa-2x"></i>
-								<p>STEP 2: PLAN</p>
+  						<div class="col-lg-6 stepbox-item ">
+  								<i class="fas icon fa-pencil-ruler fa-2x"></i>
+								<p class="steptext">STEP 2: PLAN</p>
 								<p> we will make sure that every part of the plan will be executed</p>
   						</div>
-  						<div class="col-12">
-  								<i class="fas fa-file-code fa-2x"></i>
-								<p>STEP 3: DEVELOPMENT</p>
+  						<div class="col-lg-6 stepbox-item ">
+  								<i class="fas icon fa-file-code fa-2x"></i>
+								<p class="steptext">STEP 3: DEVELOPMENT</p>
 								<p>this is where the fun start; we will be working on your product</p>
   						</div>
-  						<div class="col-12">
-  								<i class="fas fa-globe fa-2x"></i>
-								<p>STEP 4: DELIVERY</p>
+  						<div class="col-lg-6 stepbox-item ">
+  								<i class="fas icon fa-globe fa-2x"></i>
+								<p class="steptext">STEP 4: DELIVERY</p>
 								<p>hate to see you go, but love to see you happy. enjoy your product!</p>
   						</div>
   					</div>
@@ -96,106 +105,95 @@
   			</div>
 		</div>
 		</section>
+		<!-- ABOUT SECTION END -->
 
+		<!-- PORTFOLIO SECTION START -->
 		<section id="portfolio">
 			<div class="container">
-				<div class="col-md-12 title-text">
-	    				<h1> P O R T F O L I O</h1>
-	    				<h3 class="undertitle">SOME OF MY PROJECTS</h3>
-	    				<p> Before starting the <i>Full Stack Developer</i> program at the <a href="https://codeinstitute.net">Code Institute</a>, I studies Business IT & Management. During this studie, I developed a couple of websites. I started a couple of companies, but never was really successfull, because I was missing in-depth knowledge on programming. Anyway, I'm here to learn and develop my skills. Hopefully I will receive my diploma in <i>Software Development</i> in a couple of months. </p>
+				<div class="row">
+					<div class="col-12 title-text">
+		    				<h1> P O R T F O L I O</h1>
+		    				<h3 class="undertitle">SOME OF MY PROJECTS</h3>
+		    				<p> Before starting the <i>Full Stack Developer</i> program at the <a href="https://codeinstitute.net">Code Institute</a>, I studies Business IT & Management. During this studie, I developed a couple of websites. I started a couple of companies, but never was really successfull, because I was missing in-depth knowledge on programming. Anyway, I'm here to learn and develop my skills. Hopefully I will receive my diploma in <i>Software Development</i> in a couple of months. </p>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		    					<div class="portfolio-item"><a href="http://www.ghettoopera.com"><img src="assets/img/ghetto.jpg"></a></div>
+			    				<h6> TITLE: <small> GHETTO OPERA </small> </h6>
+			    				<h6> PROJECT:<small> LOGO DESIGN </small> </h6>
+		    			</div>
+		    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		    					<div class="portfolio-item"><a href="http://zorba-restaurant.nl/"><img src="assets/img/zorba.jpg"></a></div>
+			    				<h6> TITLE: <small> ZORBA DE GRIEK </small> </h6>
+			    				<h6> PROJECT:<small> WEB + LOGO DESIGN / DEVELOPMENT </small> </h6>
+		    			</div>
+		    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		    					<div class="portfolio-item"><a href="http://casa-di-leo.nl/"><img src="assets/img/casa.jpg"></a></div>
+			    				<h6> TITLE: <small> CASA DI LEO </small> </h6>
+			    				<h6> PROJECT:<small> WEB + LOGO DESIGN / DEVELOPMENT </small> </h6>
+		    			</div>
+		    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		    					<div class="portfolio-item"><a href="https://www.rmsocceracademy.nl"><img src="assets/img/rm.jpg"></a></div>
+			    				<h6> TITLE: <small> RM SOCCER ACADEMY </small> </h6>
+			    				<h6> PROJECT:<small> WEBDESIGN / DEVELOPMENT </small> </h6>
+		    			</div>
+		    		</div> 
 	    		</div>
-
-	    		<div class="row">
-	    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	    					<div class="portfolio-item"><a href="http://www.ghettoopera.com"><img src="assets/img/ghetto.jpg"></a></div>
-		    				<h6> TITLE: <small> GHETTO OPERA </small> </h6>
-		    				<h6> PROJECT:<small> LOGO DESIGN </small> </h6>
-	    			</div>
-	    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	    					<div class="portfolio-item"><a href="http://zorba-restaurant.nl/"><img src="assets/img/zorba.jpg"></a></div>
-		    				<h6> TITLE: <small> ZORBA DE GRIEK </small> </h6>
-		    				<h6> PROJECT:<small> WEB + LOGO DESIGN / DEVELOPMENT </small> </h6>
-	    			</div>
-	    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	    					<div class="portfolio-item"><a href="http://casa-di-leo.nl/"><img src="assets/img/casa.jpg"></a></div>
-		    				<h6> TITLE: <small> CASA DI LEO </small> </h6>
-		    				<h6> PROJECT:<small> WEB + LOGO DESIGN / DEVELOPMENT </small> </h6>
-	    			</div>
-	    			<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	    					<div class="portfolio-item"><a href="https://www.rmsocceracademy.nl"><img src="assets/img/rm.jpg"></a></div>
-		    				<h6> TITLE: <small> RM SOCCER ACADEMY </small> </h6>
-		    				<h6> PROJECT:<small> WEBDESIGN / DEVELOPMENT </small> </h6>
-	    			</div>
-	    			
-	    		</div> 
-
 	    	</div>
 		</section>
+	<!-- PORTFOLIO SECTION END -->
 
+	<!-- CONTACT SECTION START-->
 		<section id="contact">
 			<div class="container">
-
 				<div class="row">
-	    			<div class="col-md-12 title-text">
+	    			<div class="col-12 title-text">
 	    				<h1> C O N T A C T</h1>
 	    				<h3 class="undertitle">ASK ME WHATEVER</h3>
 	    			</div>
 	  			</div>
-
 	  			<div class="row">
-	  				<div class="col-lg-8">
+	  				<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
 	  					<div class="row">
-		  					<div class="col-6">
-		  						Firstname:
-		  					</div>
-
-		  					<div class="col-6">
-		  						Lastname:
-		  					</div>
-
-		  					<div class="col-12">
-		  							<div class="form-group">
-								   	 	<label for="exampleFormControlTextarea1">Example textarea</label>
-								    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-								  </div>
-		  					</div>
+		  					<iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10625.896270323023!2d4.8831279597418265!3d52.37046422478013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c0d0058fbb%3A0x82e04c1f25cfeb8c!2sKeizersgracht!5e0!3m2!1snl!2snl!4v1566084090550!5m2!1snl!2snl" width="800" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
 	  					</div>
-
 	  				</div>
-	  				<div class="col-lg-4">
+	  				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 	  					<h4>We would love to help you</h4>
-	  					<p> There is o such thing as a stupid question. Therefore I would like to let you know, that you can ask me anything. </p>
+	  					<p> There is no such thing as a stupid question. Therefore I would like to let you know, that you can ask me anything. Feel free to reach me at any time via e-mail using the following contact address:  </p>
+	  					<p> <a href="mailto:murriagli@gmail.com"> murriagli@gmail.com </a></p>
 	  					<h6>Feel like visiting? </h6>
-	  					<p>Please feel free to drop by at any time in Amsterdam.</p>
-	  					<iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10625.896270323023!2d4.8831279597418265!3d52.37046422478013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c0d0058fbb%3A0x82e04c1f25cfeb8c!2sKeizersgracht!5e0!3m2!1snl!2snl!4v1566084090550!5m2!1snl!2snl" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  					<p>Please feel free to drop by at any time in Amsterdam. Please notice that people who love to code, are very unavaillable. Therefore I would suggest you to make an appointment first.</p>
+	  						<div class="address-box">
+	  							<h6>Address:</h6>
+	  							<p>Keizersgracht 1,
+	  							<br>1017 GB
+	  							<br>Amsterdam
+	  							<br>Netherlands
+	  						</div>
 	  				</div>
 	  			</div>
 	  		</div>
-
-
-
 		</section>
+	<!-- CONTACT SECTION END-->
 
+	<!-- FOOTER START-->
 	<footer>
-		<div class="row footer sticky-bottom">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-				<ul>
-					<li><a href="#">GITHUB REPOSITORY </a> |</li>
-					<li><a href="#">CODE INSTITUTE </a> |</li>
-					<li><a href="#">LINKEDIN </a></li>
-				</ul>
-				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<div class="row footer sticky-bottom justify-content-md-center">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-center">
 				<a class="logo-footer" href="#home">
 					<img src="assets/img/logo_white.png" /> 
 				</a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-				CONTACT: MURRIAGLI@GMAIL.COM
-			</div>
 		</div>
 	</footer>
+	<!-- FOOTER END-->
+
+	<!-- CALLING FOR JAVASCIPRT SCRIPTS FOR THE BOOTSTRAP COLLAPSE (MENU) FUNCTION. AT THE END OF THE BODY TAG SO THAT THE SPEED OF THE WEBSITE WILL BE LESS AFFECTED -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
+<!-- BODY END-->
 </html>
