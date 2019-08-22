@@ -7,25 +7,36 @@ body {
 	font-weight: 200;
 }
 
-/* --------------- HEADER RULES ---------------- */  
-.headertext {
+a {
+	color:grey;
+}
 
+a:hover {
+	color:grey;
+	text-decoration: none;
+}
+
+p {
+	font-weight: 200;
+	font-size:12px;
+}
+
+ul.ml-auto.menu-header {
+	list-style-type: none;
+	display:inline-block;
+	float: right;
+}
+
+
+/* --------------- HEADER RULES ---------------- */  
+
+.headertext {
 	text-align: center;
 }
 
 .logo  {
 	background-image: url('assets/img/logo.png');
 }
-
-.logo-footer {
-
-	margin-left: 30%;
-	
-
-
-
-}
-
 
 
 header {
@@ -34,37 +45,15 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-
 }
-a {
-	color:grey;
-}
-
-.u-listmenu li {
-	list-style-type: none;
-	display: inline;
-	margin:10px;
-	padding: 0;
-	font-size: 16px;
-
-	
-
-}
-
-.menu-header {
-	background-color:#e0e2e4;
-	text-align: center;
-	margin-top:10px;
-	max-height: 30px;
-	padding:0;
-}
-
 
 .logoheader img {
-
 	margin-left:37%;
 	padding:0;
 }
+
+
+/* --------------- VARIOUS RULES ---------------- */  
 
 .subtitle {
 	font-size:14px;
@@ -73,8 +62,31 @@ a {
 }
 
 .stepbox {
-	background-color: yellow;
+	background-color: #FAFAFA;
 	text-align: center;
+}
+
+.stepbox-item {
+	border:2px solid white;
+	transition: background 0.6s;
+}
+
+.stepbox-item:hover {
+	background:black;
+	color:white;
+}
+
+.icon {
+	margin-top:20px;
+}
+
+.steptext {
+	margin-top:5px;
+	font-weight: 700;
+}
+
+.text-description {
+	text-transform: lowercase;
 }
 
 .portfolio-item img {
@@ -82,17 +94,22 @@ a {
 	min-height: 400px;
 	opacity: 0.4;
 	margin:0;
-
-}
-
-.map {
-	max-width: 100%;
+	transition: opacity 2s;
+	-webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 .portfolio-item img:hover {
 	opacity: 1.0;
+	-webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+            filter: grayscale(0%);
 }
-
 
 .info-step {
 	text-align: center;
@@ -104,13 +121,9 @@ a {
 
 .img-mar img {
 	max-width: 100%;
+	min-width: 100%; 
 }
 
-
-p {
-	font-weight: 200;
-	font-size:12px;
-}
 
 .title-text {
 	text-align:center;
@@ -126,17 +139,40 @@ p {
 	font-family: 'Roboto' , sans-serif;
 }
 
-.img {
-	background-image: url('https://secondchancetinyhomes.org/wp-content/uploads/2016/09/empty-profile.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+.address-box {
+	background: black;
+	color:white;
+	border-radius: 5px;
+	padding: 10px; 
+	margin-bottom:20px;
+}
 
+
+/* --------------- MAP RULE TO MAKE IT BLACK&WHITE -------------- */
+
+.map {
+	max-width: 100%;
+	margin-bottom:30px;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 /* --------------- FOOTER RULES ---------------- */  
+.logo-footer img {
+	margin-top:15px;
+}
+
+.footer-center {
+	text-align: center;
+}
 
 .footer {
+	font-size:12px;
 	background-color:black;
 	color:white;
-	min-height: 100px;
+	min-height: 60px;
+
 }
